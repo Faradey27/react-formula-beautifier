@@ -2,6 +2,9 @@
 
 React wrapper for mathjax
 
+[Demo](http://faradey27.github.io/react-formula-beautifier/)
+[Sources of demo](https://github.com/Faradey27/react-formula-beautifier/tree/master/examples/FormulaPainter)
+
 # Quickstart: How to use?
 
 ### (a) Install library
@@ -48,7 +51,7 @@ class App extends Component {
 export default App;
 ```
 
-### You can also find more detailed example here [EXAMPLE](https://github.com/Faradey27/react-formula-beautifier/tree/master/examples/FormulaPainter)
+### You can also find more examples here [EXAMPLE](https://github.com/Faradey27/react-formula-beautifier/tree/master/examples/FormulaPainter)
 ### Feel free to open issues [ISSUES](https://github.com/Faradey27/react-formula-beautifier/issues)
 
 ### Note:
