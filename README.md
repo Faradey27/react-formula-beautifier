@@ -1,28 +1,60 @@
 # react-formula-beautifier
-mathajax wrap for reactjs
 
-Guide:
+React wrapper for mathjax
 
-1) npm install react --save <br />
-2) npm install react-formula-beautifier --save <br />
-3) add original mathajax to index.html or write mathajax in window.mathajax <br />
-4) var TeX = require('react-formula-beautifier'), end use TeX component <br />
+# Quickstart: How to use?
 
+### (a) Install library
+    npm install react-formula-beautifier --save
+# (b) Add mathjax for your current project(add script tag to your index.html file)
+      <script
+        type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full">
+      </script>
+
+### (c) Done you are awesome!
 
 ## Example Usage
 
 ```js
 
-var React = require('react');
-var TeX = require('react-formula-beautifier');
+import { Component } from 'react';
+import TeX from 'react-formula-beautifier';
 
-var Formula = React.createClass({
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentFormula: 'x_1 + (x_2)^2'
+    };
+  }
 
-    render() {
-        var expression = "x_1 + (x_2)^2";
-        return <TeX value={"$"+expression+"$"}/>;
-    }
-});
+  updateCurrentFormula = (e) => this.setState({currentFormula: e.target.value});
 
-module.exports = Formula;
+  render() {
+    return (
+      <div className="formula-block">
+        <input
+          defaultValue={this.state.currentFormula}
+          placeholder="Enter formula"
+          onChange={this.updateCurrentFormula}
+        />
+        <TeX value={this.state.currentFormula} />
+      </div>
+    );
+  }
+}
 
+export default App;
+```
+
+### You can also find more detailed example here [EXAMPLE](https://github.com/Faradey27/react-formula-beautifier/tree/master/examples/FormulaPainter)
+### Feel free to open issues [ISSUES](https://github.com/Faradey27/react-formula-beautifier/issues)
+
+### Note:
+
+instead of adding mathjax to index.html file you can also use imports-loader in your React Component
+
+```js
+  import 'imports?this=>window!script!mathjax/MathJax.js';
+```

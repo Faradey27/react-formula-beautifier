@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import { Component } from 'react';
-import TeX from './../../../../index';
+import TeX from 'react-formula-beautifier';
 
 class App extends Component {
   constructor(props) {
