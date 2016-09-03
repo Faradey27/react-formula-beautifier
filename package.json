@@ -1,0 +1,38 @@
+{
+  "name": "react-formula-beautifier",
+  "version": "0.0.1",
+  "description": "mathajax wrap for reactjs",
+  "homepage": "https://github.com/Faradey27/react-formula-beautifier",
+  "main": "main.js",
+  "keywords": [
+    "react",
+    "mathajax",
+    "beautifier",
+    "formula",
+    "math",
+    "formulas"
+  ],
+  "author": {
+    "name": "Andrii Tiertyshnyi",
+    "email": "andrii.tiertyshnyi@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Faradey27/react-formula-beautifier"
+  },
+  "bugs": {
+    "url": "https://github.com/Faradey27/react-formula-beautifier/issues"
+  },
+  "peerDependencies": {
+    "react": ">=0.12"
+  },
+  "_id": "react-formula-beautifier@0.0.1",
+  "scripts": {},
+  "_from": "react-formula-beautifier@*",
+  "_npmVersion": "1.4.28",
+  "_npmUser": {
+    "name": "faradey27",
+    "email": "andrii.tiertyshnyi@gmail.com"
+  }
+}
