@@ -1,0 +1,4 @@
+{
+  "extends": "hardcore-react",
+  "parser": "babel-eslint",
+}

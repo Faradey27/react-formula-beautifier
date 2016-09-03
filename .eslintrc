@@ -1,0 +1,7 @@
+{
+  "extends": "hardcore-react",
+  "parser": "babel-eslint",
+  "globals": {
+    "MathJax": true
+  }
+}
