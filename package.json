@@ -1,6 +1,6 @@
 {
   "name": "react-formula-beautifier",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Mathajax wrapper for ReactJS",
   "homepage": "https://github.com/Faradey27/react-formula-beautifier",
   "main": "index.js",
