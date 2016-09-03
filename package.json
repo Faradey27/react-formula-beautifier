@@ -1,6 +1,6 @@
 {
   "name": "react-formula-beautifier",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "mathajax wrap for reactjs",
   "homepage": "https://github.com/Faradey27/react-formula-beautifier",
   "main": "main.js",
@@ -27,7 +27,7 @@
   "peerDependencies": {
     "react": ">=0.12"
   },
-  "_id": "react-formula-beautifier@0.0.1",
+  "_id": "react-formula-beautifier@0.0.2",
   "scripts": {},
   "_from": "react-formula-beautifier@*",
   "_npmVersion": "1.4.28",
