@@ -5,20 +5,7 @@ Guide:
 
 1) npm install react --save <br />
 2) npm install react-formula-beautifier --save <br />
-3) add mathajax to index.html or write mathajax in window.mathajax <br />
-    <br />
-    ## For example:
-    ```html
-        <html>
-        <head>
-            <script type="text/javascript"
-                    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&dummy=.js"></script>
-        </head>
-        <body>
-        </body>
-        </html>
-    ```
-      <br />
+3) add original mathajax to index.html or write mathajax in window.mathajax <br />
 4) var TeX = require('react-formula-beautifier'), end use TeX component <br />
 
 
