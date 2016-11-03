@@ -48,7 +48,7 @@ var TeX = function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      return React.createElement(
+      return _react.createElement(
         'div',
         {
           id: 'MathJax-TeX',
