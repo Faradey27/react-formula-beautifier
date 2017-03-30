@@ -1,6 +1,6 @@
 {
   "name": "example",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "example",
   "main": "index.js",
   "scripts": {
@@ -49,7 +49,7 @@
     "react-hot-loader": "^1.3.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
-    "react-formula-beautifier": "0.1.2"
+    "react-formula-beautifier": "0.2.0"
   },
   "engine": "node >= 5.9.0",
   "nyc": {

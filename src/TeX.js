@@ -1,21 +1,31 @@
-/* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable import/no-unresolved */
 /* eslint-disable new-cap */
-/* eslint-disable react/jsx-no-bind */
 
-import { Component, PropTypes } from 'react';
+import React from 'react'; // we require this to have correct build of component(without error React is not defined)
+const { Component, PropTypes } = React;
 
 export default class TeX extends Component {
   static propTypes = {
+    className: PropTypes.string,
+    showMathMenu: PropTypes.bool,
+    showMathMenuMSIE: PropTypes.bool,
+    style: PropTypes.object,
+    tex2jax: PropTypes.object,
     value: PropTypes.string,
+  }
+
+  static defaultProps = {
+    showMathMenu: false,
+    showMathMenuMSIE: false,
+    tex2jax: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
   }
 
   constructor(props) {
     super(props);
+
     MathJax.Hub.Config({
-      tex2jax: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
-      showMathMenu: false,
-      showMathMenuMSIE: false,
+      tex2jax: props.tex2jax,
+      showMathMenu: props.showMathMenu,
+      showMathMenuMSIE: props.showMathMenuMSIE,
     });
   }
 
@@ -27,11 +37,17 @@ export default class TeX extends Component {
     MathJax.Hub.Queue(['Typeset', MathJax.Hub, this.node]);
   }
 
+  setNode = (node) => {
+    this.node = node;
+  }
+
   render() {
     return (
       <div
+        className={this.props.className}
         id="MathJax-TeX"
-        ref={(node) => { this.node = node; }}
+        ref={this.setNode}
+        style={this.props.style}
       >
         {`$${this.props.value}$`}
       </div>

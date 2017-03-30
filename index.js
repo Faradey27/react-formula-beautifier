@@ -1,1 +1,1 @@
-module.exports = require('./dist/TeX.js');
+module.exports = require('./dist/TeX.js'); // eslint-disable-line
