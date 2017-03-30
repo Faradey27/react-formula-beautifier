@@ -3,6 +3,7 @@
 React wrapper for mathjax
 
 [Demo](http://faradey27.github.io/react-formula-beautifier/)
+
 [Sources of demo](https://github.com/Faradey27/react-formula-beautifier/tree/master/examples/FormulaPainter)
 
 # Quickstart: How to use?
@@ -28,7 +29,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentFormula: 'x_1 + (x_2)^2'
+      currentFormula: props.defaultFormula || 'x_1 + (x_2)^2'
     };
   }
 
