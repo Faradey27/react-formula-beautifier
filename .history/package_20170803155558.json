@@ -51,7 +51,7 @@
     "uglify-js": "^2.8.18"
   },
   "peerDependencies": {
-    "react": ">=15.0.0"
+    "react": ">=15.0.0",
   },
   "_id": "react-formula-beautifier@0.1.0",
   "scripts": {
